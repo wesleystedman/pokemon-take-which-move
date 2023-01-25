@@ -48,6 +48,7 @@ function handleCalculateButtonClick(event) {
     let outputStr = '<tr><th></th><th>0.0x</th><th>0.25x</th><th>0.5x</th><th>1.0x</th><th>2.0x</th><th>4.0x</th></tr>';
     results.forEach((result, index) => {
         outputStr += `<tr><td>Remove move ${index}:</td>`;
+        outputStr += '<td>' + result['0.0'] + '</td>';
         outputStr += '<td>' + result['0.25'] + '</td>';
         outputStr += '<td>' + result['0.5'] + '</td>';
         outputStr += '<td>' + result['1'] + '</td>';
