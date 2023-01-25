@@ -47,13 +47,12 @@ function handleCalculateButtonClick(event) {
     // display results
     let outputStr = '';
     results.forEach((result, index) => {
-        outputStr += `Remove move ${index}: `;
-        outputStr += result['0'] + ' ';
-        outputStr += result['0.25'] + ' ';
-        outputStr += result['0.5'] + ' ';
-        outputStr += result['1'] + ' ';
-        outputStr += result['2'] + ' ';
-        outputStr += result['4'] + '<br/>';
+        outputStr += `<tr><td>Remove move ${index}:</td>`;
+        outputStr += '<td>' + result['0.25'] + '</td>';
+        outputStr += '<td>' + result['0.5'] + '</td>';
+        outputStr += '<td>' + result['1'] + '</td>';
+        outputStr += '<td>' + result['2'] + '</td>';
+        outputStr += '<td>' + result['4'] + '</td></tr>';
     });
     resultsDivElem.innerHTML = outputStr;
 }
