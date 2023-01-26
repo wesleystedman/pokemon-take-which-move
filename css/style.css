@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+th.col-label {
+    border: 1px solid black;
+    width: 4em;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+}
+
+td.row-label {
+    text-align: right;
+}
+
+td.result-cell {
+    text-align: center;
+}

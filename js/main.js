@@ -11,10 +11,11 @@ const type3Elem = document.getElementById('type3');
 const type4Elem = document.getElementById('type4');
 const type5Elem = document.getElementById('type5');
 const fullyEvolvedElem = document.getElementById('fully-evolved');
-const resultsDivElem = document.getElementById('results-go-here');
 const optionsSteel = document.querySelectorAll('option[value="8"]');
 const optionsDark = document.querySelectorAll('option[value="16"]');
 const optionsFairy = document.querySelectorAll('option[value="17"]');
+const resultsDivElem = document.getElementById('results-go-here');
+const resultCells = document.querySelectorAll('.result-cell');
 
 
 // attach event handlers
@@ -45,17 +46,14 @@ function handleCalculateButtonClick(event) {
     // TODO: determine "best" result
 
     // display results
-    let outputStr = '<tr><th></th><th>0.0x</th><th>0.25x</th><th>0.5x</th><th>1.0x</th><th>2.0x</th><th>4.0x</th></tr>';
     results.forEach((result, index) => {
-        outputStr += `<tr><td>Remove move ${index + 1}:</td>`;
-        outputStr += '<td>' + result['0'] + '</td>';
-        outputStr += '<td>' + result['0.25'] + '</td>';
-        outputStr += '<td>' + result['0.5'] + '</td>';
-        outputStr += '<td>' + result['1'] + '</td>';
-        outputStr += '<td>' + result['2'] + '</td>';
-        outputStr += '<td>' + result['4'] + '</td></tr>';
+        resultCells[index * 6].innerHTML = result['0'];
+        resultCells[index * 6 + 1].innerHTML = result['0.25'];
+        resultCells[index * 6 + 2].innerHTML = result['0.5'];
+        resultCells[index * 6 + 3].innerHTML = result['1'];
+        resultCells[index * 6 + 4].innerHTML = result['2'];
+        resultCells[index * 6 + 5].innerHTML = result['4'];
     });
-    resultsDivElem.innerHTML = outputStr;
 }
 
 function handleVersionChange(event) {

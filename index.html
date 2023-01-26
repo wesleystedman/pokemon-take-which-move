@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Which Move?</title>
 
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js" type="module"></script>
 </head>
 
@@ -169,17 +170,63 @@
 
     <div class="results">
         <h3>Results</h3>
-        <table id="results-go-here">
-            <!-- <tr>
+        <table class="result-table">
+            <tr class="result-header">
                 <th></th>
-                <th>0.0x</th>
-                <th>0.25x</th>
-                <th>0.5x</th>
-                <th>1.0x</th>
-                <th>2.0x</th>
-                <th>4.0x</th>
-            </tr> -->
+                <th class="col-label">0.0x</th>
+                <th class="col-label">0.25x</th>
+                <th class="col-label">0.5x</th>
+                <th class="col-label">1.0x</th>
+                <th class="col-label">2.0x</th>
+                <th class="col-label">4.0x</th>
+            </tr>
+            <tr class="result-row">
+                <td class="row-label">Forget Move 1:</td>
+                <td id="row-1-col-1" class="result-cell"></td>
+                <td id="row-1-col-2" class="result-cell"></td>
+                <td id="row-1-col-3" class="result-cell"></td>
+                <td id="row-1-col-4" class="result-cell"></td>
+                <td id="row-1-col-5" class="result-cell"></td>
+                <td id="row-1-col-6" class="result-cell"></td>
+            </tr>
+            <tr class="result-row">
+                <td class="row-label">Forget Move 2:</td>
+                <td id="row-2-col-1" class="result-cell"></td>
+                <td id="row-2-col-2" class="result-cell"></td>
+                <td id="row-2-col-3" class="result-cell"></td>
+                <td id="row-2-col-4" class="result-cell"></td>
+                <td id="row-2-col-5" class="result-cell"></td>
+                <td id="row-2-col-6" class="result-cell"></td>
+            </tr>
+            <tr class="result-row">
+                <td class="row-label">Forget Move 3:</td>
+                <td id="row-3-col-1" class="result-cell"></td>
+                <td id="row-3-col-2" class="result-cell"></td>
+                <td id="row-3-col-3" class="result-cell"></td>
+                <td id="row-3-col-4" class="result-cell"></td>
+                <td id="row-3-col-5" class="result-cell"></td>
+                <td id="row-3-col-6" class="result-cell"></td>
+            </tr>
+            <tr class="result-row">
+                <td class="row-label">Forget Move 4:</td>
+                <td id="row-4-col-1" class="result-cell"></td>
+                <td id="row-4-col-2" class="result-cell"></td>
+                <td id="row-4-col-3" class="result-cell"></td>
+                <td id="row-4-col-4" class="result-cell"></td>
+                <td id="row-4-col-5" class="result-cell"></td>
+                <td id="row-4-col-6" class="result-cell"></td>
+            </tr>
+            <tr class="result-row">
+                <td class="row-label">Don't Learn Move:</td>
+                <td id="row-5-col-1" class="result-cell"></td>
+                <td id="row-5-col-2" class="result-cell"></td>
+                <td id="row-5-col-3" class="result-cell"></td>
+                <td id="row-5-col-4" class="result-cell"></td>
+                <td id="row-5-col-5" class="result-cell"></td>
+                <td id="row-5-col-6" class="result-cell"></td>
+            </tr>
         </table>
+        <table id="results-go-here"></table>
     </div>
 </body>
 
