@@ -14,7 +14,6 @@ const fullyEvolvedElem = document.getElementById('fully-evolved');
 const optionsSteel = document.querySelectorAll('option[value="8"]');
 const optionsDark = document.querySelectorAll('option[value="16"]');
 const optionsFairy = document.querySelectorAll('option[value="17"]');
-const resultsDivElem = document.getElementById('results-go-here');
 const resultCells = document.querySelectorAll('.result-cell');
 
 
